@@ -1,0 +1,56 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #b2b2b2; /* White background by default */
+    color: #000000; /* Default text color */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.dark-mode {
+    background-color: #202020; /* Dark background in dark mode */
+    color: #fff; /* Light text color in dark mode */
+}
+
+.background-container {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.dark-mode .form-container {
+    background-color: #333; /* Dark background for form container in dark mode */
+}
+
+label, input, select, button {
+    margin: 10px 0;
+    display: block;
+    width: 100%;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #277b2b;
+}
+
+#darkModeToggle {
+    margin-top: 10px;
+}
